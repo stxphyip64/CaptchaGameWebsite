@@ -3,7 +3,7 @@ const pass = document.querySelector(".pass-inpt");
 const submit = document.querySelector(".submit");
 
 chk.addEventListener("click", tglclass);
-submit.addEventListener("submit", opensketch); 
+submit.addEventListener("submit", openFile); 
 function tglclass(){
     chk.classList.toggle("active");
     if (pass.type == "password"){
@@ -13,6 +13,7 @@ function tglclass(){
         pass.type = "password"
     }
 };
-function opensketch('sketch.js') {
+function openFile('sketch.js') {
+    submit.classList.toggle("active");
     window.open('sketch.js', '_blank');
-}
+};
