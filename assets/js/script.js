@@ -15,11 +15,6 @@ function tglclass(){
 };
 function openFile(); {
     submit.classList.toggle("active");
-    var newWindow = window.open('sketches/index.html', '_blank');
-    if (newWindow) {
-        newWindow.focus();
-    } else {
-        console.log('Pop-up window error');
-    }
-            
+    window.open('sketches/index.html', '_blank');
+
 };
