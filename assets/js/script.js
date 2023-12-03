@@ -23,7 +23,7 @@ function openFile(fileToOpen, windowName, width, height); {
     var left = (screenWidth - width) / 2;
     var top = (screenHeight - height) / 2;
     submit.classList.toggle("active");
-    window.open('sketches/index.html', 'CaptchaChallenge', 'width=' + width + ', height=' + height + ', left=' + left + ', top=' + top);
+    var newWindow = window.open('sketches/index.html', 'CaptchaChallenge', 'width=' + width + ', height=' + height + ', left=' + left + ', top=' + top);
 
     //var newWindow = window.open('sketches/index.html', '_blank');
     if (newWindow) {
