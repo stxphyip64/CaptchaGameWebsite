@@ -1,6 +1,6 @@
 const chk = document.querySelector(".chk-box");
 const pass = document.querySelector(".pass-inpt");
-const submit = document.querySelector("");
+const submit = document.querySelector(".submit");
 
 chk.addEventListener("click", tglclass);
 submit.addEventListener("submit", opensketch); 
