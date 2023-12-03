@@ -13,7 +13,23 @@ function tglclass(){
         pass.type = "password"
     }
 };
-function openFile() {
+function openFile(fileToOpen, windowName, width, height); {
+    var fileToOpen = 'sketches/index.html';
+    var windowName = 'CaptchaChallenge';
+    var width = 400;
+    var height = 300;
+    var screenWidth = window.screen.width;
+    var screenHeight = window.screen.height;
+    var left = (screenWidth - width) / 2;
+    var top = (screenHeight - height) / 2;
     submit.classList.toggle("active");
-    window.open('sketches/index.html', '_blank');
+    window.open('sketches/index.html', 'CaptchaChallenge', 'width=' + width + ', height=' + height + ', left=' + left + ', top=' + top);
+
+    //var newWindow = window.open('sketches/index.html', '_blank');
+    if (newWindow) {
+        newWindow.focus();
+    } else {
+        console.log('Pop-up window error');
+    }
+            
 };
