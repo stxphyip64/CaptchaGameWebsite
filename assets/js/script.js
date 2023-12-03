@@ -13,7 +13,7 @@ function tglclass(){
         pass.type = "password"
     }
 };
-function openFile('sketch.js') {
+function openFile() {
     submit.classList.toggle("active");
-    window.open('sketch.js', '_blank');
+    window.open('sketches/index.html', '_blank');
 };
