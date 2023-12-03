@@ -13,7 +13,7 @@ function tglclass(){
         pass.type = "password"
     }
 };
-function openFile(fileToOpen, windowName, width, height); {
+function openFile(); {
     var fileToOpen = 'sketches/index.html';
     var windowName = 'CaptchaChallenge';
     var width = 400;
