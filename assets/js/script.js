@@ -3,7 +3,7 @@ const pass = document.querySelector(".pass-inpt");
 const submit = document.querySelector(".submit");
 
 chk.addEventListener("click", tglclass);
-submit.addEventListener("submit", openFile); 
+submit.addEventListener("click", openFile); 
 function tglclass(){
     chk.classList.toggle("active");
     if (pass.type == "password"){
