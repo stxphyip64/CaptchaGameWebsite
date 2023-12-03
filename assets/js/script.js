@@ -13,18 +13,9 @@ function tglclass(){
         pass.type = "password"
     }
 };
-function openFile(fileToOpen,windowName,width,height); {
-    var fileToOpen = 'sketches/index.html';
-    var windowName = 'CaptchaChallenge';
-    var width = 400;
-    var height = 300;
-    var screenWidth = window.screen.width;
-    var screenHeight = window.screen.height;
-    var left = (screenWidth - width) / 2;
-    var top = (screenHeight - height) / 2;
+function openFile(); {
     submit.classList.toggle("active");
-    var newWindow = window.open('sketches/index.html', 'CaptchaChallenge', 'width=' + width + ', height=' + height + ', left=' + left + ', top=' + top);
-
+    var newWindow = window.open('sketches/index.html', 'width=400, height=300');
     //var newWindow = window.open('sketches/index.html', '_blank');
     if (newWindow) {
         newWindow.focus();
